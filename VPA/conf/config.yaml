@@ -1,0 +1,20 @@
+defaults:
+  - _self_
+  - datamodule: tu_datamodule
+  - trainer: default
+  - model: gin # gcn sgc gat
+  - logger: wb
+
+agg: vpa # mean sum max
+dataset_name: IMDB-BINARY # IMDB-MULTI REDDIT-BINARY REDDIT-MULTI-5K COLLAB MUTAG PROTEINS PTC_FM NCI1
+deg_features: 0 # 1
+fold_idx: 0
+
+accelerator: gpu
+devices: [0]
+seed: 42
+batch_size: 64
+
+batch_run: false
+save_learning_curves: false
+save_results: true
