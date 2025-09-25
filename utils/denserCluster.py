@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 import os
-import diptest
 import csv
 from utils import set_seed
 import math

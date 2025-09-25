@@ -38,8 +38,7 @@ parser.add_argument('--intialbost',       type=int,   default=0,         help='n
 
 
 args = parser.parse_args()
-# experiment = Experiment(api_key="tets", project_name="bets")
-experiment = Experiment(api_key="Iyr1jak4yjocuZKFko2wHRPh3", project_name="noisygraphs",workspace="noisygraphs")
+experiment = Experiment(api_key="your_api_key", project_name="your_project_name", workspace="your_workspace")
 device = torch.device("cuda:" + str(args.device)) if torch.cuda.is_available() else torch.device("cpu")
 
 

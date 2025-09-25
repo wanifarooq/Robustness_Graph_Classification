@@ -10,7 +10,7 @@ from torch_geometric.utils import add_self_loops, degree
 #i have right now 12.1 cuda version and 2.1.0 torch vesion which is not currently supported by
 #current version of gpu supported dgl now for testing pupose i have included that
 import dgl
-# from dgl.nn.pytorch.glob import SortPooling
+from dgl.nn.pytorch.glob import SortPooling
 from models.layers import GCN, HGPSLPool
 from torch_geometric.nn import GCNConv,JumpingKnowledge
 from torch_geometric.nn import GINConv,global_add_pool,GATv2Conv
