@@ -6,7 +6,6 @@ import math
 import copy
 import random
 
-from wassertein import torch_wasserstein_loss
 
 cross_entropy_val = nn.CrossEntropyLoss
 
